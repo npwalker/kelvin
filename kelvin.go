@@ -43,7 +43,7 @@ var configuration *Configuration
 var bridge = &HueBridge{}
 var lights []*Light
 
-const lightUpdateInterval = 1 * time.Second
+const lightUpdateInterval = 20 * time.Second
 const stateUpdateInterval = 1 * time.Minute
 const timeBetweenCalls = 200 * time.Millisecond // see https://developers.meethue.com/develop/application-design-guidance/hue-system-performance/
 const lightTransistionTime = 400 * time.Millisecond
